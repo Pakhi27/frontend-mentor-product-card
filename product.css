@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Montserrat:wght@200&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,100&family=Inter:wght@400;700;800&family=Montserrat:wght@200&family=Poppins:wght@500&display=swap');
+html{
+    font-size: 16px;
+}
+body{
+    font-family:Montserrat;
+     background-color: hsl(30, 38%, 92%); ;
+    /* font-size:19px; */
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 31.25rem;
+    height: 25rem;
+    margin-left: 18.75rem;
+    border-radius: 0.3rem;
+    border:black;
+    background-color: white;
+    margin-top:5rem;
+  }
+
+  .Image {
+    flex: 1; /* Make the image take up the remaining space */
+    overflow: hidden; /* Ensure the image does not overflow its container */
+  }
+
+  .Image img {
+    width: 115%; /* Make the image width 100% of its container */
+    height: 100%; /* Make the image height 100% of its container */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+  }
+
+  .box1 {
+    flex: 1; /* Make the box take up the remaining space */
+    padding: 1.5rem; /* Add padding as needed */
+  }
+  .BOX{
+    display:flex;
+  }
+  .sub-heading,.Sub-heading{
+      color:hsl(228, 12%, 48%);
+      font-family: Montserrat;
+      font-weight: 600;
+  }
+  .sub-heading{
+    font-size: 1.75rem;
+    font-family: Fraunces;
+    font-weight: bold; 
+    text-shadow: 1px 2px 4px black;
+    color:black;
+  }
+  .heading{
+    margin-top:0.25rem;
+    letter-spacing: 0.25rem;
+    color:hsl(212, 21%, 14%);
+    font-size:0.625rem;
+  }
+  .price1{
+    margin-bottom:1.875rem;
+    margin-top:0;
+    color:hsl(158, 36%, 37%);
+    font-weight: 50rem;
+    font-size:2.18rem;
+  }
+  .price2{
+    margin-left:2.5rem;
+    font-size:0.625rem;
+    margin-top:1.25rem;
+  }
+  .btn{
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    color:white;
+    background-color: hsl(158, 36%, 37%);
+    padding:0.3rem;
+    width:13.75rem;
+    font-size:1.25rem;
+    margin-left:0px;
+  }
+  @media screen and (max-width:375px){
+    .container{
+        display:inline;
+        max-width: 100%;
+        margin:2px;
+        border-radius: 5px;
+    }
+    .Image{
+        flex: 1;
+        overflow: hidden;
+        width:300px;
+        height: 180px;
+    }
+    .box1{
+        background-color: white;
+    }
+    .sub-heading{
+        font-size: 16px;
+        font-family: Fraunces;
+        font-weight: bold; 
+        text-shadow: 1px 2px 4px black;
+        color:black;
+    }
+    .Sub-heading{
+        font-size: 14px;
+    }
+    .price1{
+        font-size: 15px;
+        font-weight: 800;
+    }
+    .price2{
+        margin-top: 0;
+        font-size:15px;
+    }
+    .btn{
+        margin-top:0px;
+        margin-bottom: 5px;
+        width:250px;
+    }
+    .heading{
+        margin-top:1px;
+    }
+
+  }
